@@ -1,7 +1,7 @@
 # Install the Components
 
 ## Introduction
-In this lab, you will install all the components needed for this workshop. Some of these will be provisioned manually and many will be provisioned automatically using a provided Terraform script.
+In this lab, you will install all the components needed for this workshop. Oracle Digital Assistant will be provisioned manually. The rest will be provisioned automatically using a provided Terraform script.
 
 Estimated time: 40 min
 
@@ -12,18 +12,18 @@ Estimated time: 40 min
 ### Prerequisites
 
 - An OCI Account with sufficient credits where you will perform the lab. (Some of the services used in this lab are not part of the *Always Free* program.)
-- Choose which web browser to use before you start. There is an option in a later lab to download a github repo to your local computer using the OCI Console Cloud Shell. Some users have experienced a bug attempting to do this with the Firefox Browser Extended Support Release (ESR). The Chrome browser is an alternative in this case.
+- Choose which web browser to use before you start. There is an option in a later lab to download a github repo to your local computer using the OCI Console Cloud Shell.
 - Check that your tenancy has access to the **Frankfurt or London or Chicago Region**
     - For Paid Tenancy
         - Click on region on top of the screen
-        - Check that the Chicago (or Frankfurt) Region is there (Green rectangle)
+        - Check that the Frankfurt or London or Chicago Region is there (Green rectangle)
         - If not, Click on Manage Regions to add it to your regions list. You need Tenancy Admin right for this.
-        - Click on the US MidWest (Chicago)
+        - For ex, click on the US MidWest (Chicago)
         - Click Subscribe
 
     ![Chicago Region](images/chicago-region.png)
 
-    - For Free Trial, the home region should be Chicago (or Frankfurt)
+    - For Free Trial, the HOME region should be Frankfurt or London or Chicago.
 - The lab is using Cloud Shell with Public Network.
 
     The lab assume that you have access to **OCI Cloud Shell with Public Network access**.
@@ -87,7 +87,7 @@ You can
     1. Compartments
     ![Menu Compartment](images/compartment1.png =40%x*)
 2. Click ***Create Compartment***
-    - Give a name: ***oci-starter***
+    - Give a name: ex: ***genai-agent***
     - Then again: ***Create Compartment***
     ![Create Compartment](images/compartment2.png)
 4. When the compartment is created copy the compartment ocid ##COMPARTMENT_OCID## and put it in your notes
@@ -113,7 +113,10 @@ You can
     git clone https://github.com/mgueury/oci-genai-agent-ext.git
     </copy>
     ````
-7. Check if you have an Atuthorisation Token (assiociated with your profile)
+7. Check if you have an Authorisation Token (associated with your profile).
+
+   For more info, see here: https://docs.oracle.com/en-us/iaas/Content/Registry/Tasks/registrygettingauthtoken.htm
+
    If yes, note it in your notepad. If not, the script below will create it.
 
 7. Run each of the three commands below in the Terminal, one at a time. It will run Terraform to create the rest of the components.

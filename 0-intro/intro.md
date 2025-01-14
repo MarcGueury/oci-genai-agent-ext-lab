@@ -2,12 +2,15 @@
 # Introduction
 
 ## About This Workshop
-We will extend the features of Oracle Generative AI Agent RAG using Terraform. The sample code will allow 
+We will extend the features of Oracle Generative AI Agent RAG. The sample code will allow 
 - to search documents like Word/Excel, Images, Video, Audio or Websites (using sitemaps)
 - to build a custom user interface with: 
     - Oracle Digital Assistant
     - APEX
     - A python library Streamlit  
+- run ingestion automatically.
+
+The installation uses Terraform.
 
 We’ll be able to search documents like:
 - Video and Audio files using OCI Speech
@@ -18,7 +21,7 @@ We’ll be able to search documents like:
 
 ![Screenshot](images/when-was-jazz-created.png)
 
-In the 3rd lab, we will create 3 user interfaces for the above using the following tools:
+From the 3rd lab, we will create 3 user interfaces for the above using the following tools:
 - Oracle Digital Assistant
 - APEX
 - A python library Streamlit  
@@ -41,15 +44,10 @@ It works like this:
 Here's how various file types are processed.
 
 - If the file has the extension **.pdf**, **.txt**, **.csv**, **.md**, the file is copied to the AGENT Object Storage.
-
 - If the file has the extension **.png**, **.jpg**, **.jpeg**, or **.gif**, it is processed by OCI Vision. The output is stored in the AGENT Object storage 
-
 - If the file has the extension **.mp4**, **.avi**, **.mp3**, **.wav**, or **.m4a**, it is processed by OCI Speech.
-
 - If the file has the extension **.tif**, it is processed by OCI Document Understanding.
-
 - If the file has the extension **.json**, this is an output of the asynchronous AI services such as OCI Speech or OCI Document Understanding. 
-
 - All other file types like **.doc**, **.docx**, **,xlsx**, **.pptx** are sent to OCI Function with a document parser.
 
 ### Physical Architecture
@@ -62,11 +60,9 @@ We will install the following architecture using Terraform.
 
 - Provision the services needed for the system
     - Compartment, Object Storage Bucket, Stream, Event, GenAI Agent, AI services and a Virtual Machine
-- Create an OCI Function to identify the documents
+- Create an OCI Function to convert binary documents (like Word/Excel)
 - Integrate the components into a working system
-- Create a search user interface
-- Process files through the system
-- Search for files through the user interface
+- Search for files through several types of user interfaces
 
 ## Prerequisites
 ### Cloud Account
