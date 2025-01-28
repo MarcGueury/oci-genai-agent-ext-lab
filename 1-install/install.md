@@ -49,16 +49,26 @@ Estimated time: 40 min
 
 1. Open a text editor and copy & paste this text into a text file on your local computer. These will be the variables that will be used during the lab.
 
-    ````
+    ```
     <copy>
     List of ##VARIABLES##
-    ---------------------
+    =====================
     COMPARTMENT_OCID=(SAMPLE) ocid1.compartment.oc1.amaaaaaaaa
     TF_VAR_auth_token=(SAMPLE) ABCDEF&é!12345
     TF_VAR_db_password=(SAMPLE) YOUR_PASSWORD
+    ODA_OCID= (SAMPLE) ocid1.odainstance.oc1.amaaaaaaaa
  
+
     Terraform Output
-    ----------------
+    ================
+    
+    AGENT_ENDPOINT_OCID=$AGENT_ENDPOINT_OCID
+    
+    -----------------------------------------------------------------------
+    Streamlit:
+    http://12.45.67.89:8080/
+
+    -----------------------------------------------------------------------
     APEX login:
 
     APEX Workspace
@@ -70,8 +80,11 @@ Estimated time: 40 min
     APEX APP
     https://abcdefghijklmnop.apigateway.eu-frankfurt-1.oci.customer-oci.com/ords/r/apex_app/apex_app/
     User: APEX_APP / YOUR_PASSWORD
+    -----------------------------------------------------------------------
+    Oracle Digital Assistant (Web Channel)
+    http://12.45.67.89/
     </copy>
-    `````
+    ```
 
 ## Task 2: Create a Compartment
 
@@ -140,6 +153,14 @@ You can
 
     ```
     <copy>    
+    -----------------------------------------------------------------------
+    AGENT_ENDPOINT_OCID=$AGENT_ENDPOINT_OCID
+    
+    -----------------------------------------------------------------------
+    Streamlit:
+    http://12.45.67.89:8080/
+
+    -----------------------------------------------------------------------
     APEX login:
 
     APEX Workspace
@@ -151,6 +172,10 @@ You can
     APEX APP
     https://abcdefghijklmnop.apigateway.eu-frankfurt-1.oci.customer-oci.com/ords/r/apex_app/apex_app/
     User: APEX_APP / YOUR_PASSWORD
+    
+    -----------------------------------------------------------------------
+    Oracle Digital Assistant (Web Channel)
+    http://12.45.67.89/
     </copy>    
     ```
 **You may now proceed to the [next lab](#next)**

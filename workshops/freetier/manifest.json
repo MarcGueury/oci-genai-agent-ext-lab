@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Oracle GenAI Agent RAG: More formats: Video/Audio/Word/Excel, Websites, Custom UI",
+    "workshoptitle": "Oracle GenAI Agent RAG: More formats: Video/Audio/Word/Excel/Websites, Custom UI",
     "help": "livelabs-help-oci_us@oracle.com",
 	"tutorials": [
         {
@@ -19,11 +19,11 @@
             "filename": "./../../2-apex/apex.md"
         },
         {
-            "title": "Lab 2: Streamlit",
+            "title": "Lab 3: Streamlit",
             "filename": "./../../3-streamlit/streamlit.md"
         },        
         {
-            "title": "Lab 2: Digital Assistant",
+            "title": "Lab 4: Digital Assistant",
             "filename": "./../../4-digital-assistant/digital-assistant.md"
         },        
         {

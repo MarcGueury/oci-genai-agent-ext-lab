@@ -13,9 +13,9 @@ Estimated time: 10 min
 
 ## Task 1: Test with APEX
 
-1. Check the URL at the end of the terraform run
+1. Check the APEX URL and the User/Password at the end of the build log.
     
-1. Go to the url of the application (ex:https://abcdefghijklmnop.apigateway.eu-frankfurt-1.oci.customer-oci.com/ords/r/apex_app/apex_app/)
+1. Go to the url of the application (ex: https://abcdefghijklmnop.apigateway.eu-frankfurt-1.oci.customer-oci.com/ords/r/apex_app/apex_app/)
 
     Login as APEX\_APP / YOUR\_PASSWORD
     
@@ -40,11 +40,7 @@ Estimated time: 10 min
     | FAX       | .tif      | Is there an invoice for Optika ?                  | 
     |           |           | What does the file invoice.tif contains ?         |
     | Video     | .mp4      | What is Oracle Analytics                          | 
-    | Audio     | .mp3      | Summarize the audio file Voice_SupportRobot.mp3   | 
-
-
-## Task 2: Optional - Test additional files
-This is an optional test you can run with more sample files. If you do this test, you will have more content in the database. If you're running short of time, then you can skip it or come back to it later.
+    | Audio     | .mp3      | Summarize the audio file Voice_SupportRobot.mp3   |
 
 **You may now proceed to the [next lab.](#next)**
 
