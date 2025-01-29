@@ -19,7 +19,7 @@ Estimated time: 10 min
    
 1. Type "what is Oracle Analytics Cloud", then *Enter*
 
-    Hover on the citation. Note that you can see the page number. Click on the lin.
+    Hover on the citation. Note that you can see the page number. Click on the link.
     ![Test Jazz](images/streamlit.png)    
 
 1. Type "List the countries in the map of brazil", then *Enter*

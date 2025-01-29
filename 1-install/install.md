@@ -12,11 +12,10 @@ Estimated time: 40 min
 ### Prerequisites
 
 - An OCI Account with sufficient credits where you will perform the lab. (Some of the services used in this lab are not part of the *Always Free* program.)
-- Choose which web browser to use before you start. There is an option in a later lab to download a github repo to your local computer using the OCI Console Cloud Shell.
 - Check that your tenancy has access to the **Frankfurt or London or Chicago Region**
     - For Paid Tenancy
         - Click on region on top of the screen
-        - Check that the Frankfurt or London or Chicago Region is there (Green rectangle)
+        - Check that the Frankfurt or London or Chicago Region is there
         - If not, Click on Manage Regions to add it to your regions list. You need Tenancy Admin right for this.
         - For ex, click on the US MidWest (Chicago)
         - Click Subscribe
@@ -172,7 +171,7 @@ You can
     APEX APP
     https://abcdefghijklmnop.apigateway.eu-frankfurt-1.oci.customer-oci.com/ords/r/apex_app/apex_app/
     User: APEX_APP / YOUR_PASSWORD
-    
+
     -----------------------------------------------------------------------
     Oracle Digital Assistant (Web Channel)
     http://12.45.67.89/
@@ -192,7 +191,7 @@ You can
     </copy>
     ```
 
-    Solution:  edit the file *oci-genai-agent-ext/starter/src/terraform/variable.tf* and replace the *availability domain* to one where there are still capacity
+    Solution:  edit the file *starter/src/terraform/variable.tf* and replace the *availability domain* to one where there are still capacity
     ```
     <copy>    
     OLD: variable availability_domain_number { default = 1 }
@@ -204,7 +203,7 @@ You can
 
     ```
     <copy>
-    ./build.sh
+    ./starter.sh build
     </copy>
     ```
 
@@ -218,7 +217,7 @@ You can
     </copy>    
     ```
 
-    Solution:  edit the file *oci-genai-agent-ext/starter/src/terraform/variable.tf* and replace the *instance_shape* to one where there are still capacity in your tenancy/region
+    Solution:  edit the file *starter/src/terraform/variable.tf* and replace the *instance_shape* to one where there are still capacity in your tenancy/region
     ```
     <copy>    
     OLD: variable instance_shape { default = "VM.Standard.x86.Generic" }
@@ -230,7 +229,7 @@ You can
 
     ```
     <copy>
-    ./build.sh
+    ./starter.sh build
     </copy>
     ```
 
@@ -245,7 +244,7 @@ You can
     </copy>    
     ```
 
-    In such case, just rerunning ./build.sh fixed the issue.
+    In such case, just rerunning ./starter.sh build fixed the issue.
 
 4. During terraform:
     ```
