@@ -2,15 +2,13 @@
 # Introduction
 
 ## About This Workshop
-We will extend the features of Oracle Generative AI Agent RAG. The sample code will allow 
-- to search documents like Word/Excel, Images, Video, Audio or Websites (using sitemaps)
-- to build a custom user interface with: 
+We will extend the features of Oracle Generative AI Agent RAG. The sample will allow to:
+- Search documents like Word/Excel, Images, Video, Audio or Websites (using sitemaps)
+- Build a custom User Interface (UI) with: 
     - Oracle Digital Assistant
     - APEX
     - A python library Streamlit  
-- run ingestion automatically
-
-The installation uses Terraform.
+- Run ingestion automatically
 
 We’ll be able to search documents like:
 - Video and Audio files using OCI Speech
@@ -19,12 +17,14 @@ We’ll be able to search documents like:
 - Word, Excel, Powerpoint, ... using OCI Functions
 - Websites using Sitemap 
 
+The installation uses Terraform.
+
 ![Screenshot](images/when-was-jazz-created.png)
 
-From the 3rd lab, we will create 3 user interfaces for the above using the following tools:
-- Oracle Digital Assistant
+From the lab 2/3/4, we will create 3 user interfaces for the above using the following tools:
 - APEX
-- A python library Streamlit  
+- A Python library Streamlit  
+- Oracle Digital Assistant
   
 Estimated Workshop Time: 90 minutes
 
